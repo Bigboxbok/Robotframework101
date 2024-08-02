@@ -5,5 +5,8 @@ Library    SeleniumLibrary
 TC_001: Start Robot Framework
     Log To Console    Hello world
 
-TC_002: Open google
-    Open Browser	http://google.com	gc
+# TC_002: Open google
+#     Open Browser	http://google.com	gc
+
+TC_003: Open google with headless mode
+    Open Browser	http://google.com	headlesschrome
