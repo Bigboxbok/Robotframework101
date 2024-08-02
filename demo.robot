@@ -12,6 +12,8 @@ Open web facebook
 TC_001: Open facebook
     [Tags]    tc_001
     Open web facebook
+    SeleniumLibrary.Input text    id=email    we_love_bug
+    SeleniumLibrary.Input text    id=pass    we_love_bug
     Sleep    4s
 
 # TC_002: Open google with headless mode
