@@ -6,15 +6,18 @@ ${url_facebook}    https://www.facebook.com/
 
 *** Keywords ***
 Open web facebook
-    Open Browser	${url_facebook}   gc
+    SeleniumLibrary.Open Browser	${url_facebook}   gc
 
 *** Test Cases ***
 TC_001: Open facebook
     [Tags]    tc_001
     Open web facebook
+
+    # https://robotframework.org/SeleniumLibrary/SeleniumLibrary.html#Input%20Text
     SeleniumLibrary.Input text    id=email    we_love_bug
     SeleniumLibrary.Input text    id=pass    we_love_bug
-    Sleep    4s
+
+    BuiltIn.Sleep    4s
 
 # TC_002: Open google with headless mode
 #     [Tags]    tc_002
